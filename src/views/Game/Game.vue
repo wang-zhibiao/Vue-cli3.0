@@ -1,10 +1,7 @@
 <template>
-  <div class="home">
-    <el-container>
-      <el-header><Header /></el-header>
-       <el-main><router-view/></el-main>
-       <el-footer> <Footer/></el-footer>
-    </el-container>
+  <div class="Game">
+    <Header msg="Welcome to Your Vue.js App"/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,7 +11,7 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "home",
+  name: "Game",
   components: {
     Header,
     Footer
